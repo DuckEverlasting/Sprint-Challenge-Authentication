@@ -1,0 +1,1 @@
+module.exports = {jwtSecret: 'added a .env file but keeping this just in case'}
