@@ -22,8 +22,8 @@ function register(req, res) {
     .then(saved => {
       res.status(201).json(saved);
     })
-    .catch(error => {
-      res.status(500).json(error);
+    .catch(err => {
+      res.status(500).json(err);
     });
 };
 
@@ -44,8 +44,8 @@ function login(req, res) {
         res.status(401).json({ message: 'Invalid Credentials' });
       }
     })
-    .catch(error => {
-      res.status(500).json(error);
+    .catch(err => {
+      res.status(500).json(err);
     });
 };
 
